@@ -1,11 +1,12 @@
 import Weather from "./Weather.js";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="New York" />
         <footer>
           This project was coded by Shamiso Lewis and is{" "}
           <a
