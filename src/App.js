@@ -1,5 +1,6 @@
 import Weather from "./Weather.js";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import "@fontsource/roboto";
 import "./App.css";
 
 export default function App() {

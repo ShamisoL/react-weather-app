@@ -18,6 +18,8 @@ export default function WeatherForecast(props) {
   if (loaded) {
     return (
       <div className="WeatherForecast">
+        <hr />
+        <h4>5 day forecast</h4>
         <div className="row">
           <div className="col">
             <WeatherForecastDay data={forecast[0]} />

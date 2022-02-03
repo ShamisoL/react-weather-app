@@ -2,11 +2,12 @@ import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import "@fortawesome/fontawesome-free/js/all.js";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1>{props.data.city}</h1>
+      <h1>Hi, {props.data.city}👋🏾</h1>
       <ul>
         <li>
           <FormattedDate date={props.data.date} />
@@ -24,10 +25,14 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-3">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {Math.round(props.data.wind)}mph</li>
+            <li>
+              <i class="fas fa-tint"></i> {props.data.humidity}%
+            </li>
+            <li>
+              <i className="fas fa-wind"></i> {Math.round(props.data.wind)}mph
+            </li>
           </ul>
         </div>
       </div>
